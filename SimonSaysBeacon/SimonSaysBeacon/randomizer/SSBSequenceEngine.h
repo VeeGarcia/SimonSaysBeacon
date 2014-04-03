@@ -10,6 +10,8 @@
 
 @interface SSBSequenceEngine : NSObject
 
+@property (nonatomic, strong) NSMutableArray *simonsSequence;
+
 - (void)nextBeacon;
 - (BOOL)isSameSequenceAsSimon;
 

@@ -11,8 +11,6 @@
 
 @interface SSBSequenceEngine () <SSBeaconHelperDelegate>
 
-
-@property (nonatomic, strong) NSMutableArray *simonsSequence;
 @property (nonatomic, strong) NSMutableArray *mySequence;
 @end
 
