@@ -9,7 +9,7 @@
 #import "SSBGameViewController.h"
 #import "SSBSequenceEngine.h"
 
-@interface SSBGameViewController ()
+@interface SSBGameViewController () 
 
 @property (nonatomic, strong) SSBSequenceEngine *sequenceEngine;
 
@@ -44,7 +44,7 @@
         NSLog(@"Canceled.");
         return;
     }
-    
+    self.lastVisitedId = -1;
     [self.sequenceEngine nextBeacon];
     NSArray* lamps = self.sequenceEngine.simonsSequence;
     [self play:lamps afterIndex:0];
@@ -119,6 +119,11 @@
     self.lamp2.highlighted = lamp == 2;
     self.lamp3.highlighted = lamp == 3;
     self.lamp4.highlighted = lamp == 4;
+}
+
+#pragma SSBeaconHelperDelegate
+- (void)beaconVisited:(int)beacon {
+    [self.sequenceEngine beaconVisited:beacon];
 }
 
 @end

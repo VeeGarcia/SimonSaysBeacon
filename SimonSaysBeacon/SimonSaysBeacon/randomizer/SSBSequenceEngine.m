@@ -7,9 +7,8 @@
 //
 
 #import "SSBSequenceEngine.h"
-#import "SSBeaconHelper.h"
 
-@interface SSBSequenceEngine () <SSBeaconHelperDelegate>
+@interface SSBSequenceEngine ()
 
 @property (nonatomic, readwrite) NSMutableArray *simonsSequence;
 @property (nonatomic, strong) NSMutableArray *mySequence;
@@ -25,9 +24,19 @@
     return self;
 }
 
+- (void)beaconVisited:(int)beacon {
+    int lastBeacon = [[self.mySequence lastObject] intValue];
+    if (lastBeacon != beacon) {
+        [self.mySequence addObject:[NSNumber numberWithInt:beacon]];
+    }
+    
+}
+
 - (void)nextBeacon {
     NSUInteger random = [self randomNumber];
     [self.simonsSequence addObject:[NSNumber numberWithInteger:random]];
+    
+    self.mySequence = [[NSMutableArray alloc] init];
     NSLog(@"simonSequence %@", self.simonsSequence);
 }
 
@@ -37,11 +46,6 @@
     NSLog(@"simonSequence %@", self.simonsSequence);
     NSLog(@"mySequence %@", self.mySequence);
     return didCorrectSequence;
-}
-
-#pragma SSBeaconHelperDelegate
-- (void)beaconVisited:(int)beacon {
-    [self.mySequence addObject:[NSNumber numberWithInt:beacon]];
 }
 
 - (NSUInteger)randomNumber {

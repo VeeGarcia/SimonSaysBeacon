@@ -15,5 +15,6 @@
 - (void)nextBeacon;
 - (BOOL)isSameSequenceAsSimons;
 
+- (void)beaconVisited:(int)beacon;
 
 @end

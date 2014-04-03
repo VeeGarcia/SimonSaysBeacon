@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface SSBBaseViewController : UIViewController <CLLocationManagerDelegate>
 
