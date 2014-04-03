@@ -23,14 +23,14 @@
 {
     [super viewDidLoad];
 	self.definedBeacons = [NSMutableArray array];
-	NSDictionary *dict3 = @{@"major" : @47829, @"minor" : @35274};
-	[self.definedBeacons addObject:dict3];
-	NSDictionary *dict4 = @{@"major" : @25107, @"minor" : @63313};
-	[self.definedBeacons addObject:dict4];
-	NSDictionary *dict2 = @{@"major" : @34756, @"minor" : @37279};
-	[self.definedBeacons addObject:dict2];
-	NSDictionary *dict1 = @{@"major" : @19882, @"minor" : @62541};
+	NSDictionary *dict1 = @{@"major" : @47829, @"minor" : @35274};
 	[self.definedBeacons addObject:dict1];
+	NSDictionary *dict2 = @{@"major" : @25107, @"minor" : @63313};
+	[self.definedBeacons addObject:dict2];
+	NSDictionary *dict3 = @{@"major" : @34756, @"minor" : @37279};
+	[self.definedBeacons addObject:dict3];
+	NSDictionary *dict4 = @{@"major" : @19882, @"minor" : @62541};
+	[self.definedBeacons addObject:dict4];
 	self.locationManager = [[CLLocationManager alloc] init];
 	self.locationManager.delegate = self;
 	[self initRegion];
