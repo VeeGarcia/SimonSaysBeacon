@@ -67,6 +67,7 @@
         self.letsgo.hidden = YES;
         self.gratulation.hidden = YES;
         self.gameover.hidden = NO;
+        self.sequenceEngine.simonsSequence = [[NSMutableArray alloc] init];
     }
     [self lightsOff];
     [self reset];
