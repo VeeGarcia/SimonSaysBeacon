@@ -58,6 +58,10 @@
     }
 }
 
+- (IBAction)stop:(id)sender {
+    [self stop];
+}
+
 - (void) play: (NSArray*) lamps afterIndex: (NSUInteger) index {
     NSLog(@"PLAY %i of %i: %@", index + 1, lamps.count, lamps);
     

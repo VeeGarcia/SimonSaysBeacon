@@ -19,6 +19,10 @@
 		59043C6B18EDE043003DF839 /* 1_Senseacon-hintergrund.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C6218EDE043003DF839 /* 1_Senseacon-hintergrund.png */; };
 		59043C6C18EDE043003DF839 /* 1_Senseacon-rot-an.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C6318EDE043003DF839 /* 1_Senseacon-rot-an.png */; };
 		59043C6D18EDE043003DF839 /* 1_Senseacon-rot-aus.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C6418EDE043003DF839 /* 1_Senseacon-rot-aus.png */; };
+		59043C7218EDE477003DF839 /* 1_Senseacon-start-gedrueckt.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C6E18EDE477003DF839 /* 1_Senseacon-start-gedrueckt.png */; };
+		59043C7318EDE477003DF839 /* 1_Senseacon-start.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C6F18EDE477003DF839 /* 1_Senseacon-start.png */; };
+		59043C7418EDE477003DF839 /* 1_Senseacon-stop-gedrueckt.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C7018EDE477003DF839 /* 1_Senseacon-stop-gedrueckt.png */; };
+		59043C7518EDE477003DF839 /* 1_Senseacon-stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C7118EDE477003DF839 /* 1_Senseacon-stop.png */; };
 		D6AD1F8218EDCB1A00267E92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD1F8118EDCB1A00267E92 /* Foundation.framework */; };
 		D6AD1F8418EDCB1A00267E92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD1F8318EDCB1A00267E92 /* CoreGraphics.framework */; };
 		D6AD1F8618EDCB1A00267E92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD1F8518EDCB1A00267E92 /* UIKit.framework */; };
@@ -59,6 +63,10 @@
 		59043C6218EDE043003DF839 /* 1_Senseacon-hintergrund.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-hintergrund.png"; sourceTree = "<group>"; };
 		59043C6318EDE043003DF839 /* 1_Senseacon-rot-an.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-rot-an.png"; sourceTree = "<group>"; };
 		59043C6418EDE043003DF839 /* 1_Senseacon-rot-aus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-rot-aus.png"; sourceTree = "<group>"; };
+		59043C6E18EDE477003DF839 /* 1_Senseacon-start-gedrueckt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-start-gedrueckt.png"; sourceTree = "<group>"; };
+		59043C6F18EDE477003DF839 /* 1_Senseacon-start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-start.png"; sourceTree = "<group>"; };
+		59043C7018EDE477003DF839 /* 1_Senseacon-stop-gedrueckt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-stop-gedrueckt.png"; sourceTree = "<group>"; };
+		59043C7118EDE477003DF839 /* 1_Senseacon-stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-stop.png"; sourceTree = "<group>"; };
 		D6AD1F7E18EDCB1A00267E92 /* SimonSaysBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonSaysBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6AD1F8118EDCB1A00267E92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6AD1F8318EDCB1A00267E92 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -106,15 +114,19 @@
 		59043C4918EDD294003DF839 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				59043C6218EDE043003DF839 /* 1_Senseacon-hintergrund.png */,
 				59043C5C18EDE043003DF839 /* 1_Senseacon-blau-an.png */,
 				59043C5D18EDE043003DF839 /* 1_Senseacon-blau-aus.png */,
 				59043C5E18EDE043003DF839 /* 1_Senseacon-gelb-an.png */,
 				59043C5F18EDE043003DF839 /* 1_Senseacon-gelb-aus.png */,
 				59043C6018EDE043003DF839 /* 1_Senseacon-gruen-an.png */,
 				59043C6118EDE043003DF839 /* 1_Senseacon-gruen-aus.png */,
-				59043C6218EDE043003DF839 /* 1_Senseacon-hintergrund.png */,
 				59043C6318EDE043003DF839 /* 1_Senseacon-rot-an.png */,
 				59043C6418EDE043003DF839 /* 1_Senseacon-rot-aus.png */,
+				59043C6E18EDE477003DF839 /* 1_Senseacon-start-gedrueckt.png */,
+				59043C6F18EDE477003DF839 /* 1_Senseacon-start.png */,
+				59043C7018EDE477003DF839 /* 1_Senseacon-stop-gedrueckt.png */,
+				59043C7118EDE477003DF839 /* 1_Senseacon-stop.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -291,8 +303,12 @@
 				D6AD1F9418EDCB1A00267E92 /* Images.xcassets in Resources */,
 				59043C6918EDE043003DF839 /* 1_Senseacon-gruen-an.png in Resources */,
 				59043C6518EDE043003DF839 /* 1_Senseacon-blau-an.png in Resources */,
+				59043C7518EDE477003DF839 /* 1_Senseacon-stop.png in Resources */,
+				59043C7418EDE477003DF839 /* 1_Senseacon-stop-gedrueckt.png in Resources */,
 				59043C6D18EDE043003DF839 /* 1_Senseacon-rot-aus.png in Resources */,
 				59043C6618EDE043003DF839 /* 1_Senseacon-blau-aus.png in Resources */,
+				59043C7218EDE477003DF839 /* 1_Senseacon-start-gedrueckt.png in Resources */,
+				59043C7318EDE477003DF839 /* 1_Senseacon-start.png in Resources */,
 				59043BFD18EDCEA3003DF839 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
