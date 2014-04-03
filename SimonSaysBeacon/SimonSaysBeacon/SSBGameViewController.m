@@ -9,7 +9,7 @@
 #import "SSBGameViewController.h"
 #import "SSBSequenceEngine.h"
 
-@interface SSBGameViewController ()
+@interface SSBGameViewController () 
 
 @property (nonatomic, strong) SSBSequenceEngine *sequenceEngine;
 
@@ -106,6 +106,11 @@
     self.lamp2.highlighted = lamp == 2;
     self.lamp3.highlighted = lamp == 3;
     self.lamp4.highlighted = lamp == 4;
+}
+
+#pragma SSBeaconHelperDelegate
+- (void)beaconVisited:(int)beacon {
+    [self.sequenceEngine beaconVisited:beacon];
 }
 
 @end
