@@ -7,9 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43D63E9418EDCF4C005D8C36 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D63E9318EDCF4C005D8C36 /* CoreLocation.framework */; };
-		43D63E9618EDDA63005D8C36 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D63E9518EDDA63005D8C36 /* CoreBluetooth.framework */; };
-		43D63E9C18EDDDD1005D8C36 /* SSBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D63E9B18EDDDD1005D8C36 /* SSBBaseViewController.m */; };
+		43D63E9218EDCDC5005D8C36 /* SSBeaconHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D63E9118EDCDC5005D8C36 /* SSBeaconHelper.m */; };
+		59043BFD18EDCEA3003DF839 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59043BFC18EDCEA3003DF839 /* Storyboard.storyboard */; };
+		59043C0018EDD003003DF839 /* SSBGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59043BFF18EDD003003DF839 /* SSBGameViewController.m */; };
+		59043C6518EDE043003DF839 /* 1_Senseacon-blau-an.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C5C18EDE043003DF839 /* 1_Senseacon-blau-an.png */; };
+		59043C6618EDE043003DF839 /* 1_Senseacon-blau-aus.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C5D18EDE043003DF839 /* 1_Senseacon-blau-aus.png */; };
+		59043C6718EDE043003DF839 /* 1_Senseacon-gelb-an.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C5E18EDE043003DF839 /* 1_Senseacon-gelb-an.png */; };
+		59043C6818EDE043003DF839 /* 1_Senseacon-gelb-aus.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C5F18EDE043003DF839 /* 1_Senseacon-gelb-aus.png */; };
+		59043C6918EDE043003DF839 /* 1_Senseacon-gruen-an.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C6018EDE043003DF839 /* 1_Senseacon-gruen-an.png */; };
+		59043C6A18EDE043003DF839 /* 1_Senseacon-gruen-aus.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C6118EDE043003DF839 /* 1_Senseacon-gruen-aus.png */; };
+		59043C6B18EDE043003DF839 /* 1_Senseacon-hintergrund.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C6218EDE043003DF839 /* 1_Senseacon-hintergrund.png */; };
+		59043C6C18EDE043003DF839 /* 1_Senseacon-rot-an.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C6318EDE043003DF839 /* 1_Senseacon-rot-an.png */; };
+		59043C6D18EDE043003DF839 /* 1_Senseacon-rot-aus.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C6418EDE043003DF839 /* 1_Senseacon-rot-aus.png */; };
+		59043C7218EDE477003DF839 /* 1_Senseacon-start-gedrueckt.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C6E18EDE477003DF839 /* 1_Senseacon-start-gedrueckt.png */; };
+		59043C7318EDE477003DF839 /* 1_Senseacon-start.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C6F18EDE477003DF839 /* 1_Senseacon-start.png */; };
+		59043C7418EDE477003DF839 /* 1_Senseacon-stop-gedrueckt.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C7018EDE477003DF839 /* 1_Senseacon-stop-gedrueckt.png */; };
+		59043C7518EDE477003DF839 /* 1_Senseacon-stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C7118EDE477003DF839 /* 1_Senseacon-stop.png */; };
 		D6AD1F8218EDCB1A00267E92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD1F8118EDCB1A00267E92 /* Foundation.framework */; };
 		D6AD1F8418EDCB1A00267E92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD1F8318EDCB1A00267E92 /* CoreGraphics.framework */; };
 		D6AD1F8618EDCB1A00267E92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD1F8518EDCB1A00267E92 /* UIKit.framework */; };
@@ -22,6 +35,7 @@
 		D6AD1F9D18EDCB1A00267E92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD1F8518EDCB1A00267E92 /* UIKit.framework */; };
 		D6AD1FA518EDCB1A00267E92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6AD1FA318EDCB1A00267E92 /* InfoPlist.strings */; };
 		D6AD1FA718EDCB1A00267E92 /* SimonSaysBeaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AD1FA618EDCB1A00267E92 /* SimonSaysBeaconTests.m */; };
+		D6AD1FB318EDCF3500267E92 /* SSBSequenceEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AD1FB218EDCF3500267E92 /* SSBSequenceEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +49,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		43D63E9318EDCF4C005D8C36 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		43D63E9518EDDA63005D8C36 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		43D63E9A18EDDDD1005D8C36 /* SSBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBBaseViewController.h; sourceTree = "<group>"; };
-		43D63E9B18EDDDD1005D8C36 /* SSBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBBaseViewController.m; sourceTree = "<group>"; };
+		43D63E9018EDCDC5005D8C36 /* SSBeaconHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBeaconHelper.h; sourceTree = "<group>"; };
+		43D63E9118EDCDC5005D8C36 /* SSBeaconHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBeaconHelper.m; sourceTree = "<group>"; };
+		59043BFC18EDCEA3003DF839 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		59043BFE18EDD003003DF839 /* SSBGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBGameViewController.h; sourceTree = "<group>"; };
+		59043BFF18EDD003003DF839 /* SSBGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBGameViewController.m; sourceTree = "<group>"; };
+		59043C5C18EDE043003DF839 /* 1_Senseacon-blau-an.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-blau-an.png"; sourceTree = "<group>"; };
+		59043C5D18EDE043003DF839 /* 1_Senseacon-blau-aus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-blau-aus.png"; sourceTree = "<group>"; };
+		59043C5E18EDE043003DF839 /* 1_Senseacon-gelb-an.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-gelb-an.png"; sourceTree = "<group>"; };
+		59043C5F18EDE043003DF839 /* 1_Senseacon-gelb-aus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-gelb-aus.png"; sourceTree = "<group>"; };
+		59043C6018EDE043003DF839 /* 1_Senseacon-gruen-an.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-gruen-an.png"; sourceTree = "<group>"; };
+		59043C6118EDE043003DF839 /* 1_Senseacon-gruen-aus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-gruen-aus.png"; sourceTree = "<group>"; };
+		59043C6218EDE043003DF839 /* 1_Senseacon-hintergrund.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-hintergrund.png"; sourceTree = "<group>"; };
+		59043C6318EDE043003DF839 /* 1_Senseacon-rot-an.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-rot-an.png"; sourceTree = "<group>"; };
+		59043C6418EDE043003DF839 /* 1_Senseacon-rot-aus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-rot-aus.png"; sourceTree = "<group>"; };
+		59043C6E18EDE477003DF839 /* 1_Senseacon-start-gedrueckt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-start-gedrueckt.png"; sourceTree = "<group>"; };
+		59043C6F18EDE477003DF839 /* 1_Senseacon-start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-start.png"; sourceTree = "<group>"; };
+		59043C7018EDE477003DF839 /* 1_Senseacon-stop-gedrueckt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-stop-gedrueckt.png"; sourceTree = "<group>"; };
+		59043C7118EDE477003DF839 /* 1_Senseacon-stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-stop.png"; sourceTree = "<group>"; };
 		D6AD1F7E18EDCB1A00267E92 /* SimonSaysBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonSaysBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6AD1F8118EDCB1A00267E92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6AD1F8318EDCB1A00267E92 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +83,8 @@
 		D6AD1FA218EDCB1A00267E92 /* SimonSaysBeaconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimonSaysBeaconTests-Info.plist"; sourceTree = "<group>"; };
 		D6AD1FA418EDCB1A00267E92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D6AD1FA618EDCB1A00267E92 /* SimonSaysBeaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimonSaysBeaconTests.m; sourceTree = "<group>"; };
+		D6AD1FB118EDCF3500267E92 /* SSBSequenceEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBSequenceEngine.h; sourceTree = "<group>"; };
+		D6AD1FB218EDCF3500267E92 /* SSBSequenceEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBSequenceEngine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +92,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43D63E9618EDDA63005D8C36 /* CoreBluetooth.framework in Frameworks */,
-				43D63E9418EDCF4C005D8C36 /* CoreLocation.framework in Frameworks */,
 				D6AD1F8418EDCB1A00267E92 /* CoreGraphics.framework in Frameworks */,
 				D6AD1F8618EDCB1A00267E92 /* UIKit.framework in Frameworks */,
 				D6AD1F8218EDCB1A00267E92 /* Foundation.framework in Frameworks */,
@@ -83,6 +111,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59043C4918EDD294003DF839 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				59043C6218EDE043003DF839 /* 1_Senseacon-hintergrund.png */,
+				59043C5C18EDE043003DF839 /* 1_Senseacon-blau-an.png */,
+				59043C5D18EDE043003DF839 /* 1_Senseacon-blau-aus.png */,
+				59043C5E18EDE043003DF839 /* 1_Senseacon-gelb-an.png */,
+				59043C5F18EDE043003DF839 /* 1_Senseacon-gelb-aus.png */,
+				59043C6018EDE043003DF839 /* 1_Senseacon-gruen-an.png */,
+				59043C6118EDE043003DF839 /* 1_Senseacon-gruen-aus.png */,
+				59043C6318EDE043003DF839 /* 1_Senseacon-rot-an.png */,
+				59043C6418EDE043003DF839 /* 1_Senseacon-rot-aus.png */,
+				59043C6E18EDE477003DF839 /* 1_Senseacon-start-gedrueckt.png */,
+				59043C6F18EDE477003DF839 /* 1_Senseacon-start.png */,
+				59043C7018EDE477003DF839 /* 1_Senseacon-stop-gedrueckt.png */,
+				59043C7118EDE477003DF839 /* 1_Senseacon-stop.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		D6AD1F7518EDCB1A00267E92 = {
 			isa = PBXGroup;
 			children = (
@@ -105,8 +153,6 @@
 		D6AD1F8018EDCB1A00267E92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				43D63E9518EDDA63005D8C36 /* CoreBluetooth.framework */,
-				43D63E9318EDCF4C005D8C36 /* CoreLocation.framework */,
 				D6AD1F8118EDCB1A00267E92 /* Foundation.framework */,
 				D6AD1F8318EDCB1A00267E92 /* CoreGraphics.framework */,
 				D6AD1F8518EDCB1A00267E92 /* UIKit.framework */,
@@ -118,12 +164,16 @@
 		D6AD1F8718EDCB1A00267E92 /* SimonSaysBeacon */ = {
 			isa = PBXGroup;
 			children = (
+				D6AD1FB018EDCE1C00267E92 /* sequence */,
 				D6AD1F9018EDCB1A00267E92 /* SSBAppDelegate.h */,
 				D6AD1F9118EDCB1A00267E92 /* SSBAppDelegate.m */,
+				59043BFE18EDD003003DF839 /* SSBGameViewController.h */,
+				59043BFF18EDD003003DF839 /* SSBGameViewController.m */,
 				D6AD1F9318EDCB1A00267E92 /* Images.xcassets */,
+				59043C4918EDD294003DF839 /* Images */,
 				D6AD1F8818EDCB1A00267E92 /* Supporting Files */,
-				43D63E9A18EDDDD1005D8C36 /* SSBBaseViewController.h */,
-				43D63E9B18EDDDD1005D8C36 /* SSBBaseViewController.m */,
+				43D63E9018EDCDC5005D8C36 /* SSBeaconHelper.h */,
+				43D63E9118EDCDC5005D8C36 /* SSBeaconHelper.m */,
 			);
 			path = SimonSaysBeacon;
 			sourceTree = "<group>";
@@ -131,6 +181,7 @@
 		D6AD1F8818EDCB1A00267E92 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				59043BFC18EDCEA3003DF839 /* Storyboard.storyboard */,
 				D6AD1F8918EDCB1A00267E92 /* SimonSaysBeacon-Info.plist */,
 				D6AD1F8A18EDCB1A00267E92 /* InfoPlist.strings */,
 				D6AD1F8D18EDCB1A00267E92 /* main.m */,
@@ -155,6 +206,16 @@
 				D6AD1FA318EDCB1A00267E92 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6AD1FB018EDCE1C00267E92 /* sequence */ = {
+			isa = PBXGroup;
+			children = (
+				D6AD1FB118EDCF3500267E92 /* SSBSequenceEngine.h */,
+				D6AD1FB218EDCF3500267E92 /* SSBSequenceEngine.m */,
+			);
+			name = sequence;
+			path = randomizer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +294,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59043C6A18EDE043003DF839 /* 1_Senseacon-gruen-aus.png in Resources */,
+				59043C6C18EDE043003DF839 /* 1_Senseacon-rot-an.png in Resources */,
+				59043C6818EDE043003DF839 /* 1_Senseacon-gelb-aus.png in Resources */,
+				59043C6718EDE043003DF839 /* 1_Senseacon-gelb-an.png in Resources */,
 				D6AD1F8C18EDCB1A00267E92 /* InfoPlist.strings in Resources */,
+				59043C6B18EDE043003DF839 /* 1_Senseacon-hintergrund.png in Resources */,
 				D6AD1F9418EDCB1A00267E92 /* Images.xcassets in Resources */,
+				59043C6918EDE043003DF839 /* 1_Senseacon-gruen-an.png in Resources */,
+				59043C6518EDE043003DF839 /* 1_Senseacon-blau-an.png in Resources */,
+				59043C7518EDE477003DF839 /* 1_Senseacon-stop.png in Resources */,
+				59043C7418EDE477003DF839 /* 1_Senseacon-stop-gedrueckt.png in Resources */,
+				59043C6D18EDE043003DF839 /* 1_Senseacon-rot-aus.png in Resources */,
+				59043C6618EDE043003DF839 /* 1_Senseacon-blau-aus.png in Resources */,
+				59043C7218EDE477003DF839 /* 1_Senseacon-start-gedrueckt.png in Resources */,
+				59043C7318EDE477003DF839 /* 1_Senseacon-start.png in Resources */,
+				59043BFD18EDCEA3003DF839 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,9 +328,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43D63E9C18EDDDD1005D8C36 /* SSBBaseViewController.m in Sources */,
+				59043C0018EDD003003DF839 /* SSBGameViewController.m in Sources */,
 				D6AD1F8E18EDCB1A00267E92 /* main.m in Sources */,
+				43D63E9218EDCDC5005D8C36 /* SSBeaconHelper.m in Sources */,
 				D6AD1F9218EDCB1A00267E92 /* SSBAppDelegate.m in Sources */,
+				D6AD1FB318EDCF3500267E92 /* SSBSequenceEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

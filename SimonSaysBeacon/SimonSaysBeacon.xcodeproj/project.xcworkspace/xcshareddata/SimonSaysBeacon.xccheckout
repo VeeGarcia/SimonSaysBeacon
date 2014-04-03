@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>794EF67C-D301-4339-BB6F-BA4B652C689D</string>
+	<string>D412139D-9C9F-4D3A-8611-3B9E43847563</string>
 	<key>IDESourceControlProjectName</key>
 	<string>SimonSaysBeacon</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C4F017B9-A04D-457B-B67C-705CC07D26E8</key>
-		<string>https://github.com/VeeGarcia/SimonSaysBeacon.git</string>
+		<key>698AFB25-8A8F-482B-9530-C0531F22CEA7</key>
+		<string>ssh://github.com/VeeGarcia/SimonSaysBeacon.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>SimonSaysBeacon/SimonSaysBeacon.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C4F017B9-A04D-457B-B67C-705CC07D26E8</key>
+		<key>698AFB25-8A8F-482B-9530-C0531F22CEA7</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/VeeGarcia/SimonSaysBeacon.git</string>
+	<string>ssh://github.com/VeeGarcia/SimonSaysBeacon.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C4F017B9-A04D-457B-B67C-705CC07D26E8</string>
+	<string>698AFB25-8A8F-482B-9530-C0531F22CEA7</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C4F017B9-A04D-457B-B67C-705CC07D26E8</string>
+			<string>698AFB25-8A8F-482B-9530-C0531F22CEA7</string>
 			<key>IDESourceControlWCCName</key>
 			<string>SimonSaysBeacon</string>
 		</dict>
