@@ -25,12 +25,18 @@
 }
 
 - (void)beaconVisited:(int)beacon {
-    [self.mySequence addObject:[NSNumber numberWithInt:beacon]];
+    int lastBeacon = [[self.mySequence lastObject] intValue];
+    if (lastBeacon != beacon) {
+        [self.mySequence addObject:[NSNumber numberWithInt:beacon]];
+    }
+    
 }
 
 - (void)nextBeacon {
     NSUInteger random = [self randomNumber];
     [self.simonsSequence addObject:[NSNumber numberWithInteger:random]];
+    
+    self.mySequence = [[NSMutableArray alloc] init];
     NSLog(@"simonSequence %@", self.simonsSequence);
 }
 
