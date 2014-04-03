@@ -70,7 +70,7 @@
         self.sequenceEngine.simonsSequence = [[NSMutableArray alloc] init];
     }
     [self lightsOff];
-    [self reset];
+    [self performSelector:@selector(reset) withObject:nil afterDelay:3];
 }
 
 - (void) play: (NSArray*) lamps afterIndex: (NSUInteger) index {
