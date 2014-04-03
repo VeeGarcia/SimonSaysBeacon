@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		59043BFD18EDCEA3003DF839 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59043BFC18EDCEA3003DF839 /* Storyboard.storyboard */; };
 		59043C0018EDD003003DF839 /* SSBGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59043BFF18EDD003003DF839 /* SSBGameViewController.m */; };
+		43D63E9218EDCDC5005D8C36 /* SSBeaconHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D63E9118EDCDC5005D8C36 /* SSBeaconHelper.m */; };
 		D6AD1F8218EDCB1A00267E92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD1F8118EDCB1A00267E92 /* Foundation.framework */; };
 		D6AD1F8418EDCB1A00267E92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD1F8318EDCB1A00267E92 /* CoreGraphics.framework */; };
 		D6AD1F8618EDCB1A00267E92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD1F8518EDCB1A00267E92 /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 		59043BFC18EDCEA3003DF839 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		59043BFE18EDD003003DF839 /* SSBGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBGameViewController.h; sourceTree = "<group>"; };
 		59043BFF18EDD003003DF839 /* SSBGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBGameViewController.m; sourceTree = "<group>"; };
+		43D63E9018EDCDC5005D8C36 /* SSBeaconHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBeaconHelper.h; sourceTree = "<group>"; };
+		43D63E9118EDCDC5005D8C36 /* SSBeaconHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBeaconHelper.m; sourceTree = "<group>"; };
 		D6AD1F7E18EDCB1A00267E92 /* SimonSaysBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonSaysBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6AD1F8118EDCB1A00267E92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6AD1F8318EDCB1A00267E92 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,6 +121,8 @@
 				59043BFF18EDD003003DF839 /* SSBGameViewController.m */,
 				D6AD1F9318EDCB1A00267E92 /* Images.xcassets */,
 				D6AD1F8818EDCB1A00267E92 /* Supporting Files */,
+				43D63E9018EDCDC5005D8C36 /* SSBeaconHelper.h */,
+				43D63E9118EDCDC5005D8C36 /* SSBeaconHelper.m */,
 			);
 			path = SimonSaysBeacon;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			files = (
 				59043C0018EDD003003DF839 /* SSBGameViewController.m in Sources */,
 				D6AD1F8E18EDCB1A00267E92 /* main.m in Sources */,
+				43D63E9218EDCDC5005D8C36 /* SSBeaconHelper.m in Sources */,
 				D6AD1F9218EDCB1A00267E92 /* SSBAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
