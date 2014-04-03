@@ -20,6 +20,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UIButton *stopButton;
 
+@property (weak, nonatomic) IBOutlet UIView *letsgo;
+@property (weak, nonatomic) IBOutlet UIView *gratulation;
+@property (weak, nonatomic) IBOutlet UIView *gameover;
+
 - (IBAction)start:(id)sender;
 
 - (IBAction)stop:(id)sender;

@@ -28,12 +28,10 @@
 {
     [super viewDidLoad];
     
-    self.startButton.hidden = NO;
-    self.stopButton.hidden = YES;
-    
     self.sequenceEngine = [[SSBSequenceEngine alloc] init];
     
     [self lightsOff];
+    [self reset];
 }
 
 - (BOOL) isRunning {
@@ -61,8 +59,14 @@
     
     if ([self.sequenceEngine isSameSequenceAsSimons]) {
         NSLog(@"You Win");
+        self.letsgo.hidden = YES;
+        self.gratulation.hidden = NO;
+        self.gameover.hidden = YES;
     } else {
         NSLog(@"Simon Wins");
+        self.letsgo.hidden = YES;
+        self.gratulation.hidden = YES;
+        self.gameover.hidden = NO;
     }
     [self lightsOff];
     [self reset];
@@ -84,6 +88,11 @@
 
 - (void) go {
     NSLog(@"GO");
+    self.letsgo.hidden = NO;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.letsgo.hidden = YES;
+    });
+    
     self.startButton.hidden = YES;
     self.stopButton.hidden = NO;
 }
@@ -92,6 +101,10 @@
     NSLog(@"RESET");
     self.stopButton.hidden = YES;
     self.startButton.hidden = NO;
+    
+    self.letsgo.hidden = YES;
+    self.gratulation.hidden = YES;
+    self.gameover.hidden = YES;
 }
 
 - (void) lightsOff {
