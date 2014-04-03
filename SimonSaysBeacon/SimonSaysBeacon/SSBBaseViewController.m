@@ -23,12 +23,14 @@
 {
     [super viewDidLoad];
 	self.definedBeacons = [NSMutableArray array];
-	NSDictionary *dict1 = @{@"major" : @35695, @"minor" : @53197};
-	[self.definedBeacons addObject:dict1];
-	NSDictionary *dict2 = @{@"major" : @34756, @"minor" : @37279};
-	[self.definedBeacons addObject:dict2];
 	NSDictionary *dict3 = @{@"major" : @47829, @"minor" : @35274};
 	[self.definedBeacons addObject:dict3];
+	NSDictionary *dict4 = @{@"major" : @25107, @"minor" : @63313};
+	[self.definedBeacons addObject:dict4];
+	NSDictionary *dict2 = @{@"major" : @34756, @"minor" : @37279};
+	[self.definedBeacons addObject:dict2];
+	NSDictionary *dict1 = @{@"major" : @19882, @"minor" : @62541};
+	[self.definedBeacons addObject:dict1];
 	self.locationManager = [[CLLocationManager alloc] init];
 	self.locationManager.delegate = self;
 	[self initRegion];
@@ -71,13 +73,14 @@
 		if ((beacon.proximity == CLProximityImmediate) ||
 			(beacon.proximity == CLProximityImmediate) ||
 			((beacon.rssi > -70) && (beacon.rssi != 0))) {
+			NSLog(@"beacon major %i minor %i prox %i", beacon.major.intValue, beacon.minor.intValue, (int)beacon.proximity);
 			for (int i = 0; i < self.definedBeacons.count; i++) {
 				if ([[[self.definedBeacons objectAtIndex:i] objectForKey:@"minor"] integerValue] == beacon.minor.integerValue) {
 					NSLog(@"minor %i rssi %i", beacon.minor.intValue, (int)beacon.rssi);
 					//NSLog(@"beacon major %i minor %i prox %i", beacon.major.intValue, beacon.minor.intValue, (int)beacon.proximity);
 					if (i != self.lastVisitedId) {
 						self.lastVisitedId = i;
-						[self beaconVisited:i];
+						[self beaconVisited:i + 1];
 					}
 				}
 			}
