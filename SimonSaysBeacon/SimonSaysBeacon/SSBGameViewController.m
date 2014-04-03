@@ -7,21 +7,22 @@
 //
 
 #import "SSBGameViewController.h"
+#import "SSBSequenceEngine.h"
 
 @interface SSBGameViewController ()
+@property (nonatomic) BOOL isRunning;
+@property (nonatomic, strong) SSBSequenceEngine *sequenceEngine;
 
 @end
 
-@implementation SSBGameViewController {
-    BOOL isRunning;
-}
+@implementation SSBGameViewController
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
         NSLog(@"Test 1");
         
-        isRunning = NO;
+        self.isRunning = NO;
         
         self.lamp1On = [UIImage imageNamed:@"1_Senseacon-gruen-an"];
         self.lamp1Off = [UIImage imageNamed:@"1_Senseacon-gruen-aus"];
@@ -42,18 +43,23 @@
 {
     [super viewDidLoad];
     NSLog(@"Test 2");
+    
+    self.sequenceEngine = [[SSBSequenceEngine alloc] init];
+    
     [self stop];
 }
 
 - (IBAction)start:(id)sender {
     NSLog(@"START / STOP button");
-    if (!isRunning) {
-        isRunning = YES;
-        NSArray* lamps = @[ @4, @3, @2, @1 ];
+    if (!self.isRunning) {
+        self.isRunning = YES;
+        [self.sequenceEngine nextBeacon];
+        
+        NSArray* lamps = self.sequenceEngine.simonsSequence;
         
         [self play:lamps afterIndex:0];
     } else {
-        isRunning = NO;
+        self.isRunning = NO;
         [self stop];
     }
 }
@@ -82,6 +88,12 @@
 
 - (void) stop {
     NSLog(@"STOP");
+    
+    if ([self.sequenceEngine isSameSequenceAsSimons]) {
+        NSLog(@"You Win");
+    } else {
+        NSLog(@"Simon Wins");
+    }
     [self lightsOff];
 }
 

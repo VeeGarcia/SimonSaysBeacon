@@ -11,6 +11,7 @@
 
 @interface SSBSequenceEngine () <SSBeaconHelperDelegate>
 
+@property (nonatomic, readwrite) NSMutableArray *simonsSequence;
 @property (nonatomic, strong) NSMutableArray *mySequence;
 @end
 
@@ -30,10 +31,8 @@
     NSLog(@"simonSequence %@", self.simonsSequence);
 }
 
-- (BOOL)isSameSequenceAsSimon {
-    BOOL didCorrectSequence;
-    
-    didCorrectSequence = [self.simonsSequence isEqualToArray:self.mySequence];
+- (BOOL)isSameSequenceAsSimons {
+    BOOL didCorrectSequence = [self.simonsSequence isEqualToArray:self.mySequence];
     
     NSLog(@"simonSequence %@", self.simonsSequence);
     NSLog(@"mySequence %@", self.mySequence);
