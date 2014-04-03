@@ -23,6 +23,7 @@
 		59043C7318EDE477003DF839 /* 1_Senseacon-start.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C6F18EDE477003DF839 /* 1_Senseacon-start.png */; };
 		59043C7418EDE477003DF839 /* 1_Senseacon-stop-gedrueckt.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C7018EDE477003DF839 /* 1_Senseacon-stop-gedrueckt.png */; };
 		59043C7518EDE477003DF839 /* 1_Senseacon-stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 59043C7118EDE477003DF839 /* 1_Senseacon-stop.png */; };
+		59043C7818EDE815003DF839 /* SSBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59043C7718EDE815003DF839 /* SSBBaseViewController.m */; };
 		D6AD1F8218EDCB1A00267E92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD1F8118EDCB1A00267E92 /* Foundation.framework */; };
 		D6AD1F8418EDCB1A00267E92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD1F8318EDCB1A00267E92 /* CoreGraphics.framework */; };
 		D6AD1F8618EDCB1A00267E92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD1F8518EDCB1A00267E92 /* UIKit.framework */; };
@@ -67,6 +68,8 @@
 		59043C6F18EDE477003DF839 /* 1_Senseacon-start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-start.png"; sourceTree = "<group>"; };
 		59043C7018EDE477003DF839 /* 1_Senseacon-stop-gedrueckt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-stop-gedrueckt.png"; sourceTree = "<group>"; };
 		59043C7118EDE477003DF839 /* 1_Senseacon-stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_Senseacon-stop.png"; sourceTree = "<group>"; };
+		59043C7618EDE815003DF839 /* SSBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBBaseViewController.h; sourceTree = "<group>"; };
+		59043C7718EDE815003DF839 /* SSBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBBaseViewController.m; sourceTree = "<group>"; };
 		D6AD1F7E18EDCB1A00267E92 /* SimonSaysBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonSaysBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6AD1F8118EDCB1A00267E92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6AD1F8318EDCB1A00267E92 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -167,6 +170,8 @@
 				D6AD1FB018EDCE1C00267E92 /* sequence */,
 				D6AD1F9018EDCB1A00267E92 /* SSBAppDelegate.h */,
 				D6AD1F9118EDCB1A00267E92 /* SSBAppDelegate.m */,
+				59043C7618EDE815003DF839 /* SSBBaseViewController.h */,
+				59043C7718EDE815003DF839 /* SSBBaseViewController.m */,
 				59043BFE18EDD003003DF839 /* SSBGameViewController.h */,
 				59043BFF18EDD003003DF839 /* SSBGameViewController.m */,
 				D6AD1F9318EDCB1A00267E92 /* Images.xcassets */,
@@ -328,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59043C7818EDE815003DF839 /* SSBBaseViewController.m in Sources */,
 				59043C0018EDD003003DF839 /* SSBGameViewController.m in Sources */,
 				D6AD1F8E18EDCB1A00267E92 /* main.m in Sources */,
 				43D63E9218EDCDC5005D8C36 /* SSBeaconHelper.m in Sources */,

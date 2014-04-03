@@ -33,28 +33,39 @@
     
     self.sequenceEngine = [[SSBSequenceEngine alloc] init];
     
-    [self stop];
+    [self lightsOff];
 }
 
 - (BOOL) isRunning {
-    return !self.startButton.hidden;
+    return self.startButton.hidden;
 }
 
 - (IBAction)start:(id)sender {
-    NSLog(@"START / STOP button");
-    if (!self.isRunning) {
-        [self.sequenceEngine nextBeacon];
-        
-        NSArray* lamps = self.sequenceEngine.simonsSequence;
-        
-        [self play:lamps afterIndex:0];
-    } else {
-        [self stop];
+    NSLog(@"START");
+    if ([self isRunning]) {
+        NSLog(@"Canceled.");
+        return;
     }
+    
+    [self.sequenceEngine nextBeacon];
+    NSArray* lamps = self.sequenceEngine.simonsSequence;
+    [self play:lamps afterIndex:0];
 }
 
 - (IBAction)stop:(id)sender {
-    [self stop];
+    NSLog(@"STOP");
+    if (![self isRunning]) {
+        NSLog(@"Canceled.");
+        return;
+    }
+    
+    if ([self.sequenceEngine isSameSequenceAsSimons]) {
+        NSLog(@"You Win");
+    } else {
+        NSLog(@"Simon Wins");
+    }
+    [self lightsOff];
+    [self reset];
 }
 
 - (void) play: (NSArray*) lamps afterIndex: (NSUInteger) index {
@@ -73,17 +84,14 @@
 
 - (void) go {
     NSLog(@"GO");
+    self.startButton.hidden = YES;
+    self.stopButton.hidden = NO;
 }
 
-- (void) stop {
-    NSLog(@"STOP");
-    
-    if ([self.sequenceEngine isSameSequenceAsSimons]) {
-        NSLog(@"You Win");
-    } else {
-        NSLog(@"Simon Wins");
-    }
-    [self lightsOff];
+- (void) reset {
+    NSLog(@"RESET");
+    self.stopButton.hidden = YES;
+    self.startButton.hidden = NO;
 }
 
 - (void) lightsOff {

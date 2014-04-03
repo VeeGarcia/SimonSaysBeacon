@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SSBGameViewController : UIViewController
+#import "SSBBaseViewController.h"
+
+@interface SSBGameViewController : SSBBaseViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *lamp1;
 @property (weak, nonatomic) IBOutlet UIImageView *lamp2;
