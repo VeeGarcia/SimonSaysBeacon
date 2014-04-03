@@ -18,15 +18,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UIButton *stopButton;
 
-@property (weak, nonatomic) UIImage *lamp1On;
-@property (weak, nonatomic) UIImage *lamp1Off;
-@property (weak, nonatomic) UIImage *lamp2On;
-@property (weak, nonatomic) UIImage *lamp2Off;
-@property (weak, nonatomic) UIImage *lamp3On;
-@property (weak, nonatomic) UIImage *lamp3Off;
-@property (weak, nonatomic) UIImage *lamp4On;
-@property (weak, nonatomic) UIImage *lamp4Off;
-
 - (IBAction)start:(id)sender;
 
 - (IBAction)stop:(id)sender;

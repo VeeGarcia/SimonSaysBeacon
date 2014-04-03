@@ -10,7 +10,7 @@
 #import "SSBSequenceEngine.h"
 
 @interface SSBGameViewController ()
-@property (nonatomic) BOOL isRunning;
+
 @property (nonatomic, strong) SSBSequenceEngine *sequenceEngine;
 
 @end
@@ -20,21 +20,6 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        NSLog(@"Test 1");
-        
-        self.isRunning = NO;
-        
-        self.lamp1On = [UIImage imageNamed:@"1_Senseacon-gruen-an"];
-        self.lamp1Off = [UIImage imageNamed:@"1_Senseacon-gruen-aus"];
-        self.lamp2On = [UIImage imageNamed:@"1_Senseacon-rot-an"];
-        self.lamp2Off = [UIImage imageNamed:@"1_Senseacon-rot-aus"];
-        self.lamp3On = [UIImage imageNamed:@"1_Senseacon-gelb-an"];
-        self.lamp3Off = [UIImage imageNamed:@"1_Senseacon-gelb-aus"];
-        self.lamp4On = [UIImage imageNamed:@"1_Senseacon-blau-an"];
-        self.lamp4Off = [UIImage imageNamed:@"1_Senseacon-blau-aus"];
-        
-        NSLog(@"lamp1 on: %@", self.lamp1On);
-        NSLog(@"lamp1 off: %@", self.lamp1Off);
     }
     return self;
 }
@@ -42,24 +27,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"Test 2");
+    
+    self.startButton.hidden = NO;
+    self.stopButton.hidden = YES;
     
     self.sequenceEngine = [[SSBSequenceEngine alloc] init];
     
     [self stop];
 }
 
+- (BOOL) isRunning {
+    return !self.startButton.hidden;
+}
+
 - (IBAction)start:(id)sender {
     NSLog(@"START / STOP button");
     if (!self.isRunning) {
-        self.isRunning = YES;
         [self.sequenceEngine nextBeacon];
         
         NSArray* lamps = self.sequenceEngine.simonsSequence;
         
         [self play:lamps afterIndex:0];
     } else {
-        self.isRunning = NO;
         [self stop];
     }
 }
@@ -98,17 +87,17 @@
 }
 
 - (void) lightsOff {
-    self.lamp1.image = self.lamp1Off;
-    self.lamp2.image = self.lamp2Off;
-    self.lamp3.image = self.lamp3Off;
-    self.lamp4.image = self.lamp4Off;
+    self.lamp1.highlighted = NO;
+    self.lamp2.highlighted = NO;
+    self.lamp3.highlighted = NO;
+    self.lamp4.highlighted = NO;
 }
 
 - (void) lightOn: (int) lamp {
-    self.lamp1.image = lamp == 1 ? self.lamp1On : self.lamp1Off;
-    self.lamp2.image = lamp == 2 ? self.lamp2On : self.lamp2Off;
-    self.lamp3.image = lamp == 3 ? self.lamp3On : self.lamp3Off;
-    self.lamp4.image = lamp == 4 ? self.lamp4On : self.lamp4Off;
+    self.lamp1.highlighted = lamp == 1;
+    self.lamp2.highlighted = lamp == 2;
+    self.lamp3.highlighted = lamp == 3;
+    self.lamp4.highlighted = lamp == 4;
 }
 
 @end
