@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43D63E9218EDCDC5005D8C36 /* SSBeaconHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D63E9118EDCDC5005D8C36 /* SSBeaconHelper.m */; };
 		59043BFD18EDCEA3003DF839 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59043BFC18EDCEA3003DF839 /* Storyboard.storyboard */; };
 		59043C0018EDD003003DF839 /* SSBGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59043BFF18EDD003003DF839 /* SSBGameViewController.m */; };
-		43D63E9218EDCDC5005D8C36 /* SSBeaconHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D63E9118EDCDC5005D8C36 /* SSBeaconHelper.m */; };
 		D6AD1F8218EDCB1A00267E92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD1F8118EDCB1A00267E92 /* Foundation.framework */; };
 		D6AD1F8418EDCB1A00267E92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD1F8318EDCB1A00267E92 /* CoreGraphics.framework */; };
 		D6AD1F8618EDCB1A00267E92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD1F8518EDCB1A00267E92 /* UIKit.framework */; };
@@ -22,6 +22,7 @@
 		D6AD1F9D18EDCB1A00267E92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD1F8518EDCB1A00267E92 /* UIKit.framework */; };
 		D6AD1FA518EDCB1A00267E92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6AD1FA318EDCB1A00267E92 /* InfoPlist.strings */; };
 		D6AD1FA718EDCB1A00267E92 /* SimonSaysBeaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AD1FA618EDCB1A00267E92 /* SimonSaysBeaconTests.m */; };
+		D6AD1FB318EDCF3500267E92 /* SSBSequenceEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AD1FB218EDCF3500267E92 /* SSBSequenceEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43D63E9018EDCDC5005D8C36 /* SSBeaconHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBeaconHelper.h; sourceTree = "<group>"; };
+		43D63E9118EDCDC5005D8C36 /* SSBeaconHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBeaconHelper.m; sourceTree = "<group>"; };
 		59043BFC18EDCEA3003DF839 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		59043BFE18EDD003003DF839 /* SSBGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBGameViewController.h; sourceTree = "<group>"; };
 		59043BFF18EDD003003DF839 /* SSBGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBGameViewController.m; sourceTree = "<group>"; };
-		43D63E9018EDCDC5005D8C36 /* SSBeaconHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBeaconHelper.h; sourceTree = "<group>"; };
-		43D63E9118EDCDC5005D8C36 /* SSBeaconHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBeaconHelper.m; sourceTree = "<group>"; };
 		D6AD1F7E18EDCB1A00267E92 /* SimonSaysBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonSaysBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6AD1F8118EDCB1A00267E92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6AD1F8318EDCB1A00267E92 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +57,8 @@
 		D6AD1FA218EDCB1A00267E92 /* SimonSaysBeaconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimonSaysBeaconTests-Info.plist"; sourceTree = "<group>"; };
 		D6AD1FA418EDCB1A00267E92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D6AD1FA618EDCB1A00267E92 /* SimonSaysBeaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimonSaysBeaconTests.m; sourceTree = "<group>"; };
+		D6AD1FB118EDCF3500267E92 /* SSBSequenceEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBSequenceEngine.h; sourceTree = "<group>"; };
+		D6AD1FB218EDCF3500267E92 /* SSBSequenceEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBSequenceEngine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,7 @@
 		D6AD1F8718EDCB1A00267E92 /* SimonSaysBeacon */ = {
 			isa = PBXGroup;
 			children = (
+				D6AD1FB018EDCE1C00267E92 /* sequence */,
 				D6AD1F9018EDCB1A00267E92 /* SSBAppDelegate.h */,
 				D6AD1F9118EDCB1A00267E92 /* SSBAppDelegate.m */,
 				59043BFE18EDD003003DF839 /* SSBGameViewController.h */,
@@ -155,6 +159,16 @@
 				D6AD1FA318EDCB1A00267E92 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6AD1FB018EDCE1C00267E92 /* sequence */ = {
+			isa = PBXGroup;
+			children = (
+				D6AD1FB118EDCF3500267E92 /* SSBSequenceEngine.h */,
+				D6AD1FB218EDCF3500267E92 /* SSBSequenceEngine.m */,
+			);
+			name = sequence;
+			path = randomizer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +272,7 @@
 				D6AD1F8E18EDCB1A00267E92 /* main.m in Sources */,
 				43D63E9218EDCDC5005D8C36 /* SSBeaconHelper.m in Sources */,
 				D6AD1F9218EDCB1A00267E92 /* SSBAppDelegate.m in Sources */,
+				D6AD1FB318EDCF3500267E92 /* SSBSequenceEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
