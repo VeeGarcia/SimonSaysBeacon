@@ -10,7 +10,6 @@
 
 @interface SSBSequenceEngine ()
 
-@property (nonatomic, readwrite) NSMutableArray *simonsSequence;
 @property (nonatomic, strong) NSMutableArray *mySequence;
 @end
 

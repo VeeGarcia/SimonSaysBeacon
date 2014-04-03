@@ -63,6 +63,7 @@
         NSLog(@"You Win");
     } else {
         NSLog(@"Simon Wins");
+        self.sequenceEngine.simonsSequence = [[NSMutableArray alloc] init];
     }
     [self lightsOff];
     [self reset];
