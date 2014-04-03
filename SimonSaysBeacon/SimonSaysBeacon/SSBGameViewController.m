@@ -41,13 +41,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     NSLog(@"Test 2");
-    
-    self.lamp1.image = self.lamp1On;
-    self.lamp2.image = self.lamp2On;
-    self.lamp3.image = self.lamp3On;
-    self.lamp4.image = self.lamp4On;
+    [self stop];
 }
 
 - (IBAction)start:(id)sender {
@@ -83,6 +78,7 @@
 
 - (void) stop {
     NSLog(@"STOP");
+    [self lightsOff];
 }
 
 - (void) lightsOff {
