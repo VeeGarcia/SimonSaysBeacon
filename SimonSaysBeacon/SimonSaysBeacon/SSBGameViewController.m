@@ -12,13 +12,28 @@
 
 @end
 
-@implementation SSBGameViewController
+@implementation SSBGameViewController {
+    BOOL isRunning;
+}
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
     if (self) {
-        // Custom initialization
+        NSLog(@"Test 1");
+        
+        isRunning = NO;
+        
+        self.lamp1On = [UIImage imageNamed:@"lamp1"];
+        self.lamp1Off = [UIImage imageNamed:@"lamp1"];
+        self.lamp2On = [UIImage imageNamed:@"lamp1"];
+        self.lamp2Off = [UIImage imageNamed:@"lamp1"];
+        self.lamp3On = [UIImage imageNamed:@"lamp1"];
+        self.lamp3Off = [UIImage imageNamed:@"lamp1"];
+        self.lamp4On = [UIImage imageNamed:@"lamp1"];
+        self.lamp4Off = [UIImage imageNamed:@"lamp1"];
+        
+        NSLog(@"lamp1 on: %@", self.lamp1On);
+        NSLog(@"lamp1 off: %@", self.lamp1Off);
     }
     return self;
 }
@@ -26,24 +41,62 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    NSLog(@"Test 2");
+    
+    self.lamp1.image = self.lamp1On;
+    self.lamp2.image = self.lamp1On;
+    self.lamp3.image = self.lamp1On;
+    self.lamp4.image = self.lamp1On;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)start:(id)sender {
+    NSLog(@"START / STOP button");
+    if (!isRunning) {
+        isRunning = YES;
+        NSArray* lamps = @[ @4, @3, @2, @1 ];
+        
+        [self play:lamps afterIndex:0];
+    } else {
+        isRunning = NO;
+        [self stop];
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void) play: (NSArray*) lamps afterIndex: (NSUInteger) index {
+    NSLog(@"PLAY %i of %i: %@", index + 1, lamps.count, lamps);
+    
+    [self lightOn:((NSNumber*)lamps[index]).integerValue];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        if (index >= (lamps.count - 1)) {
+            [self go];
+        } else {
+            [self play:lamps afterIndex:index + 1];
+        }
+    });
 }
-*/
+
+- (void) go {
+    NSLog(@"GO");
+}
+
+- (void) stop {
+    NSLog(@"STOP");
+}
+
+- (void) lightsOff {
+    self.lamp1.image = self.lamp1Off;
+    self.lamp2.image = self.lamp2Off;
+    self.lamp3.image = self.lamp3Off;
+    self.lamp4.image = self.lamp4Off;
+}
+
+- (void) lightOn: (int) lamp {
+    self.lamp1.image = lamp == 1 ? self.lamp1On : self.lamp1Off;
+    self.lamp2.image = lamp == 2 ? self.lamp2On : self.lamp2Off;
+    self.lamp3.image = lamp == 3 ? self.lamp3On : self.lamp3Off;
+    self.lamp4.image = lamp == 4 ? self.lamp4On : self.lamp4Off;
+}
 
 @end

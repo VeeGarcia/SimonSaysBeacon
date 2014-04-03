@@ -12,10 +12,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
+        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
+        splitViewController.delegate = (id)navigationController.topViewController;
+    }
     return YES;
 }
 
