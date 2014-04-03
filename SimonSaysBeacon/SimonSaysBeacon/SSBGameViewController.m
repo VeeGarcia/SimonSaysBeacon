@@ -23,14 +23,14 @@
         
         isRunning = NO;
         
-        self.lamp1On = [UIImage imageNamed:@"lamp1"];
-        self.lamp1Off = [UIImage imageNamed:@"lamp1"];
-        self.lamp2On = [UIImage imageNamed:@"lamp1"];
-        self.lamp2Off = [UIImage imageNamed:@"lamp1"];
-        self.lamp3On = [UIImage imageNamed:@"lamp1"];
-        self.lamp3Off = [UIImage imageNamed:@"lamp1"];
-        self.lamp4On = [UIImage imageNamed:@"lamp1"];
-        self.lamp4Off = [UIImage imageNamed:@"lamp1"];
+        self.lamp1On = [UIImage imageNamed:@"1_Senseacon-gruen-an"];
+        self.lamp1Off = [UIImage imageNamed:@"1_Senseacon-gruen-aus"];
+        self.lamp2On = [UIImage imageNamed:@"1_Senseacon-rot-an"];
+        self.lamp2Off = [UIImage imageNamed:@"1_Senseacon-rot-aus"];
+        self.lamp3On = [UIImage imageNamed:@"1_Senseacon-gelb-an"];
+        self.lamp3Off = [UIImage imageNamed:@"1_Senseacon-gelb-aus"];
+        self.lamp4On = [UIImage imageNamed:@"1_Senseacon-blau-an"];
+        self.lamp4Off = [UIImage imageNamed:@"1_Senseacon-blau-aus"];
         
         NSLog(@"lamp1 on: %@", self.lamp1On);
         NSLog(@"lamp1 off: %@", self.lamp1Off);
@@ -45,9 +45,9 @@
     NSLog(@"Test 2");
     
     self.lamp1.image = self.lamp1On;
-    self.lamp2.image = self.lamp1On;
-    self.lamp3.image = self.lamp1On;
-    self.lamp4.image = self.lamp1On;
+    self.lamp2.image = self.lamp2On;
+    self.lamp3.image = self.lamp3On;
+    self.lamp4.image = self.lamp4On;
 }
 
 - (IBAction)start:(id)sender {
