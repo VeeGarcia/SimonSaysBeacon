@@ -23,6 +23,7 @@
 		D6AD1F9D18EDCB1A00267E92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD1F8518EDCB1A00267E92 /* UIKit.framework */; };
 		D6AD1FA518EDCB1A00267E92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6AD1FA318EDCB1A00267E92 /* InfoPlist.strings */; };
 		D6AD1FA718EDCB1A00267E92 /* SimonSaysBeaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AD1FA618EDCB1A00267E92 /* SimonSaysBeaconTests.m */; };
+		D6AD1FB318EDCF3500267E92 /* SSBSequenceEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AD1FB218EDCF3500267E92 /* SSBSequenceEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		D6AD1FA218EDCB1A00267E92 /* SimonSaysBeaconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimonSaysBeaconTests-Info.plist"; sourceTree = "<group>"; };
 		D6AD1FA418EDCB1A00267E92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D6AD1FA618EDCB1A00267E92 /* SimonSaysBeaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimonSaysBeaconTests.m; sourceTree = "<group>"; };
+		D6AD1FB118EDCF3500267E92 /* SSBSequenceEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBSequenceEngine.h; sourceTree = "<group>"; };
+		D6AD1FB218EDCF3500267E92 /* SSBSequenceEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBSequenceEngine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,7 @@
 		D6AD1F8718EDCB1A00267E92 /* SimonSaysBeacon */ = {
 			isa = PBXGroup;
 			children = (
+				D6AD1FB018EDCE1C00267E92 /* sequence */,
 				D6AD1F9018EDCB1A00267E92 /* SSBAppDelegate.h */,
 				D6AD1F9118EDCB1A00267E92 /* SSBAppDelegate.m */,
 				59043BFE18EDD003003DF839 /* SSBGameViewController.h */,
@@ -166,6 +170,16 @@
 				D6AD1FA318EDCB1A00267E92 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6AD1FB018EDCE1C00267E92 /* sequence */ = {
+			isa = PBXGroup;
+			children = (
+				D6AD1FB118EDCF3500267E92 /* SSBSequenceEngine.h */,
+				D6AD1FB218EDCF3500267E92 /* SSBSequenceEngine.m */,
+			);
+			name = sequence;
+			path = randomizer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +284,7 @@
 				D6AD1F8E18EDCB1A00267E92 /* main.m in Sources */,
 				43D63E9218EDCDC5005D8C36 /* SSBeaconHelper.m in Sources */,
 				D6AD1F9218EDCB1A00267E92 /* SSBAppDelegate.m in Sources */,
+				D6AD1FB318EDCF3500267E92 /* SSBSequenceEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
