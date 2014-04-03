@@ -16,12 +16,13 @@
 
 
 - (void)beaconVisited:(int)beacon {
-	NSLog(@"beacon visited %i", beacon);
+
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	self.lastVisitedId = -1;
 	self.definedBeacons = [NSMutableArray array];
 	NSDictionary *dict1 = @{@"major" : @47829, @"minor" : @35274};
 	[self.definedBeacons addObject:dict1];
@@ -79,8 +80,10 @@
 					NSLog(@"minor %i rssi %i", beacon.minor.intValue, (int)beacon.rssi);
 					//NSLog(@"beacon major %i minor %i prox %i", beacon.major.intValue, beacon.minor.intValue, (int)beacon.proximity);
 					if (i != self.lastVisitedId) {
+						NSLog(@"beacon visited %i", i + 1);
 						self.lastVisitedId = i;
 						[self beaconVisited:i + 1];
+						AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
 					}
 				}
 			}
