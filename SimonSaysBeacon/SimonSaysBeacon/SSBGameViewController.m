@@ -46,7 +46,7 @@
         NSLog(@"Canceled.");
         return;
     }
-    
+    self.lastVisitedId = -1;
     [self.sequenceEngine nextBeacon];
     NSArray* lamps = self.sequenceEngine.simonsSequence;
     [self play:lamps afterIndex:0];
