@@ -89,13 +89,14 @@
 
 - (void) go {
     NSLog(@"GO");
+    [self lightsOff];
+    self.startButton.hidden = YES;
+    self.stopButton.hidden = NO;
+    
     self.letsgo.hidden = NO;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         self.letsgo.hidden = YES;
     });
-    
-    self.startButton.hidden = YES;
-    self.stopButton.hidden = NO;
 }
 
 - (void) reset {
